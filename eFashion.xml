@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataObjects>
+  <models>
+    <Model>
+      <name>Time period</name>
+      <attributes>
+        <attribute>
+          <Name>Year</Name>
+          <Id>OBJ_188</Id>
+        </attribute>
+        <attribute>
+          <Name>Quarter</Name>
+          <Id>OBJ_186</Id>
+        </attribute>
+        <attribute>
+          <Name>Month</Name>
+          <Id>OBJ_185</Id>
+        </attribute>
+        <attribute>
+          <Name>Week</Name>
+          <Id>OBJ_260</Id>
+        </attribute>
+        <attribute>
+          <Name>Holiday (y/n)</Name>
+          <Id>OBJ_290</Id>
+        </attribute>
+      </attributes>
+      <measures/>
+      <filters>
+        <filter>
+          <Name>Last year</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Time period</Path>
+        </filter>
+        <filter>
+          <Name>This year</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Time period</Path>
+        </filter>
+        <filter>
+          <Name>Christmas period</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Time period</Path>
+        </filter>
+        <filter>
+          <Name>Holiday period</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Time period</Path>
+        </filter>
+      </filters>
+    </Model>
+    <Model>
+      <name>Store</name>
+      <attributes>
+        <attribute>
+          <Name>State</Name>
+          <Id>OBJ_218</Id>
+        </attribute>
+        <attribute>
+          <Name>City</Name>
+          <Id>OBJ_166</Id>
+        </attribute>
+        <attribute>
+          <Name>Store name</Name>
+          <Id>OBJ_376</Id>
+        </attribute>
+      </attributes>
+      <measures/>
+      <filters>
+        <filter>
+          <Name>Sales floor size?</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Store</Path>
+        </filter>
+        <filter>
+          <Name>Owned stores</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Store</Path>
+        </filter>
+        <filter>
+          <Name>Stores with long opening hours</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Store</Path>
+        </filter>
+      </filters>
+    </Model>
+    <Model>
+      <name>Store details</name>
+      <namespace>Store</namespace>
+      <parentName>Store</parentName>
+      <path>Store</path>
+      <attributes>
+        <attribute>
+          <Name>Long opening hours</Name>
+          <Id>OBJ_62</Id>
+        </attribute>
+        <attribute>
+          <Name>Name of manager</Name>
+          <Id>OBJ_60</Id>
+        </attribute>
+        <attribute>
+          <Name>Opening date</Name>
+          <Id>OBJ_61</Id>
+        </attribute>
+        <attribute>
+          <Name>Owned (y/n)</Name>
+          <Id>OBJ_63</Id>
+        </attribute>
+        <attribute>
+          <Name>Sales floor size group</Name>
+          <Id>OBJ_214</Id>
+        </attribute>
+      </attributes>
+      <measures>
+        <measure>
+          <Name>Extended sales floor size</Name>
+          <Id>OBJ_314</Id>
+        </measure>
+      </measures>
+      <filters/>
+    </Model>
+    <Model>
+      <name>Product</name>
+      <attributes>
+        <attribute>
+          <Name>Lines</Name>
+          <Id>OBJ_165</Id>
+        </attribute>
+        <attribute>
+          <Name>Category</Name>
+          <Id>OBJ_508</Id>
+        </attribute>
+        <attribute>
+          <Name>SKU number</Name>
+          <Id>OBJ_216</Id>
+        </attribute>
+        <attribute>
+          <Name>SKU desc</Name>
+          <Id>OBJ_152</Id>
+        </attribute>
+        <attribute>
+          <Name>Color</Name>
+          <Id>OBJ_153</Id>
+        </attribute>
+        <attribute>
+          <Name>Unit Price MSRP</Name>
+          <Id>OBJ_154</Id>
+        </attribute>
+      </attributes>
+      <measures>
+        <measure>
+          <Name>Extended price</Name>
+          <Id>OBJ_194</Id>
+        </measure>
+        <measure>
+          <Name>Sold at (unit price)</Name>
+          <Id>OBJ_323</Id>
+        </measure>
+      </measures>
+      <filters>
+        <filter>
+          <Name>Prompt for a line item?</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Product</Path>
+        </filter>
+        <filter>
+          <Name>Which category?</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Product</Path>
+        </filter>
+        <filter>
+          <Name>Which product?</Name>
+          <isHidden>false</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Product</Path>
+        </filter>
+      </filters>
+    </Model>
+    <Model>
+      <name>Promotions</name>
+      <attributes>
+        <attribute>
+          <Name>Promotion (y/n)</Name>
+          <Id>OBJ_266</Id>
+        </attribute>
+        <attribute>
+          <Name>Duration</Name>
+          <Id>OBJ_261</Id>
+        </attribute>
+      </attributes>
+      <measures>
+        <measure>
+          <Name>Promotion Cost USD</Name>
+          <Id>OBJ_262</Id>
+        </measure>
+      </measures>
+      <filters/>
+    </Model>
+    <Model>
+      <name>Measures</name>
+      <attributes/>
+      <measures>
+        <measure>
+          <Name>Sales revenue</Name>
+          <Id>OBJ_147</Id>
+        </measure>
+        <measure>
+          <Name>Quantity sold</Name>
+          <Id>OBJ_148</Id>
+        </measure>
+        <measure>
+          <Name>Margin</Name>
+          <Id>OBJ_146</Id>
+        </measure>
+        <measure>
+          <Name>Discount</Name>
+          <Id>OBJ_191</Id>
+        </measure>
+      </measures>
+      <filters>
+        <filter>
+          <Name>Sales present</Name>
+          <isHidden>true</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Measures</Path>
+        </filter>
+        <filter>
+          <Name>Sales not present</Name>
+          <isHidden>true</isHidden>
+          <isDependependantOnMeasure>false</isDependependantOnMeasure>
+          <Path>Measures</Path>
+        </filter>
+      </filters>
+    </Model>
+  </models>
+</metadataObjects>
